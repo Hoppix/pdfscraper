@@ -22,7 +22,7 @@ def parseme(read, url):
 
     pattern = re.compile('(<a\shref=\"[^\"]+.pdf\")')
     links = pattern.findall(read)
-
+    #TODO more regex impl
     if not links:
         print("no pdfs found")
 
